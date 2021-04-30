@@ -1,5 +1,5 @@
 {
-  "name": "employee-management",
+  "name": "employee-management-tracker",
   "version": "1.0.0",
   "description": "Employee Management Tracker",
   "main": "app.js",
