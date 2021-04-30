@@ -268,3 +268,12 @@ async function addEmployee(){
     
     loadMainMenu();
 }
+
+function dispayResults(res){
+    console.log("");
+    console.table(res);
+    console.log("");
+}
+
+welcome();
+
