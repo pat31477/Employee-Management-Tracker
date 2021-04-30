@@ -66,3 +66,108 @@ async function loadMainMenu(){
         }            
     });    
 }
+
+async function viewEmployeesByManager(){
+    let managers;
+    let managerList;
+
+    await myBLL.getAllManagerNames()
+    .then(res=>{
+        managers = res; 
+        managerList = managers.map(e => e.name);                    
+        managerList.push("Cancel");                        
+    });           
+                 
+    await inquirer.prompt({
+        message:"Choose a manager:",
+        type: "list",
+        choices: managerList,
+        name: "choice"
+    }).then(async function(answer){
+        switch (answer.choice){
+        case "Cancel":
+            //go back to previous menu
+            break;
+        default:
+            //get the right manager from the list
+            manager = managers.find(e => e.name === answer.choice);
+            await myBLL.getEmployeesByManager(manager).then(res=>{
+                dispayResults(res);
+            });
+            break;
+        }
+        
+    });
+    loadMainMenu();
+}
+
+async function viewAllRoles(){
+    await myBLL.viewAllRoles()
+    .then(res =>{
+        dispayResults(res);
+    });
+    loadMainMenu();
+}
+
+async function viewAllDepartments(){
+    await myBLL.getAllDepartments()
+    .then(res=>{
+        dispayResults(res);
+    });
+    loadMainMenu();
+}
+
+async function getAllEmployeesFullData(){
+    await myBLL.getAllEmployeesFullData()
+    .then(res =>{
+        dispayResults(res);
+    });
+    loadMainMenu();
+}
+
+async function addDepartment(){
+    
+    await inquirer.prompt(questions.addDepartment)
+    .then(async function(answer){        
+        await myBLL.addDepartment(answer.department)
+        .then(res=>{
+            console.log(`New Department ID: ${res}`);
+        });
+    });
+    
+    loadMainMenu();
+
+}
+
+async function addRole(){
+    let q = questions.addRole;
+    let departments;
+    let departmentNames;
+    
+    await myBLL.getAllDepartments().then(res=>{
+        departmentNames = res.map(e=>e.name);
+        departments = res;
+    });
+
+    //set the list of choices
+    q.find(e=>e.name === "department").choices = departmentNames;
+    q.find(e=>e.name === "department").pageSize = departmentNames.length;
+
+    await inquirer.prompt(q)
+    .then(async function(answers){
+        
+        let role = {
+            title: answers.title,
+            salary: answers.salary,
+            department_id: departments.find(e=>e.name === answers.department).id
+        };
+
+        await myBLL.addRole(role)
+        .then(res=>{
+            console.log(res);
+        });
+
+    });
+    
+    loadMainMenu();
+}
