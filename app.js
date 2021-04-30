@@ -10,7 +10,7 @@ const questions = new Questions();
 
 //welcome message and "loader"
 function welcome(){
-    console.log("Welcome to Employee Tracker");
+    console.log("Welcome to the Employee Management Tracker");
     console.log("Loading");
     
     let duration = 0;
