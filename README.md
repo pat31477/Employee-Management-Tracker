@@ -38,7 +38,7 @@
   Program is run by executing "node app.js"
   The user is brought to a main menu with a list of commands that can be executed. Some options have further choices and prompts the user to interact with the system.
 
-  ![Full Demo](./assets/demos/Run_App_Demo.gif?raw=true "Full Demo Gif")
+  ![Full Demo](./assets/Run_App_Demo.gif?raw=true "Full Demo Gif")
 
   ![All Employees](./assets/AllEmployees.JPG?raw=true "All Employees")
 
