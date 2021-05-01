@@ -8,6 +8,7 @@
 
 ## Table of Contents
   * [Installation](#installation)
+  * [Technology](#technology)
   * [Usage](#usage)
   * [Links](#links)
   * [License](#license)
@@ -19,6 +20,18 @@
 ## Installation
 
   Install the required packages via "npm install" in the root directory (location of packages.json file).
+
+## Technology
+
+  This application was built with the following technology:
+
+  Node.js
+
+  JavaScript
+
+  SQL
+
+  NPM Inquirer
 
 ## Usage
 
