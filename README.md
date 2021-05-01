@@ -38,9 +38,19 @@
   Program is run by executing "node app.js"
   The user is brought to a main menu with a list of commands that can be executed. Some options have further choices and prompts the user to interact with the system.
 
+  ![Full Demo](./assets/demos/Run_App_Demo.gif?raw=true "Full Demo Gif")
+
+  ![All Employees](./assets/AllEmployees.JPG?raw=true "All Employees")
+
+  ![All Employees](./assets/AllDepts.JPG?raw=true "All Employees")
+
+  ![All Employees](./assets/AllRoles.JPG?raw=true "All Employees")
+
+  ![All Employees](./assets/ViewEmpByMgr.JPG?raw=true "All Employees")
+
  ## Links
  
-  * Application URL: (https://Pat31477.github.io/Employee-Management-Tracker/)
+  * Application URL: (https://pat31477.github.io/Employee-Management-Tracker/)
   * Github Repository URL: (https://github.com/Pat31477/Employee-Management-Tracker)
 
 ## License
