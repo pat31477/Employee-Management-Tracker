@@ -1,47 +1,56 @@
-# Employee-Tracker
-Week 12 homework
+# Employee Management Tracker
+
+[![apache-2.0](https://img.shields.io/badge/license-apache--2.0-green?style=plastic)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ## Description
-Node.js command line based employee management system with basic commands to add and manage Employees, Roles and Departments.
 
+  This is a Node.js command line based employee management system. This application adds and manages Employees, Roles and Departments based off of user selections.
 
+## Table of Contents
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Links](#links)
+  * [License](#license)
+  * [Contributions](#contributions)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  
 ## Installation
 
-install the required packages via "npm install" in the root directory (location of packages.json)
+  Install the required packages via "npm install" in the root directory (location of packages.json file).
 
-## Usage 
+## Usage
 
-Program is run by executing "node app.js"
-The user is brought to a main menu with a list of commands that can be execute. Some options have further choices and prompts to interact with the system.
+  Program is run by executing "node app.js"
+  The user is brought to a main menu with a list of commands that can be executed. Some options have further choices and prompts the user to interact with the system.
 
-
-![Employee Tracker](./assets/allEmployees.png)
-![Add Employee](./assets/addEmployee.png)
-
-## Credits
-
-None
+ ## Links
+ 
+  * Application URL: (https://Pat31477.github.io/Employee-Management-Tracker/)
+  * Github Repository URL: (https://github.com/Pat31477/Employee-Management-Tracker)
 
 ## License
 
-MIT License
+  [![apache-2.0](https://img.shields.io/badge/license-apache--2.0-green?style=plastic)](https://www.apache.org/licenses/LICENSE-2.0)
+
+## Contributions
+
+  [![GitHub](https://img.shields.io/badge/Gabe%20Thomas-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/samohtebag)
+
+## Tests
+
+  There are no tests at this time.
+
+## Questions
+
+  Please email me with any question regarding this project @ pat31477@yahoo.com and connect with me on Github and LinkedIn. 
+
+  [![GitHub](https://img.shields.io/badge/Patrick%20Walker-Click%20Me!-blueviolet?style=plastic&logo=GitHub)](https://github.com/pat31477) 
+  [![LinkedIn](https://img.shields.io/badge/Patrick%20Walker%20LinkedIn-Click%20Me!-grey?style=plastic&logo=LinkedIn&labelColor=blue)](https://www.linkedin.com/in/patrick-walker-926a35189/)
 
 Copyright (c) 2021 Patrick Walker
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## License
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+  [![apache-2.0](https://img.shields.io/badge/license-apache--2.0-green?style=plastic)](https://www.apache.org/licenses/LICENSE-2.0)
